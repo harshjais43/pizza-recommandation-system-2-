@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Register | Pizza Palace</title>
+<link rel="stylesheet" href="main.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="nav">
+<a href="index.html"><div id="logo"></div></a>
+<a href="login.html"><div class="nav-item" style="margin-left:100px;">Login</div></a>
+<a href="register.html"><div class="nav-item">Registration</div></a>
+<a href="pizzas.html"><div class="nav-item">Pizza List</div></a>
+</div>
+<div id="content">
+<div id="main_body">
+{% if error %}
+<p style="background:#FF4646;border-radius:10px;padding-top:5px;padding-bottom:5px;">{{ error }}</p>
+{% endif %}
+<table align="center">
+<form method="POST" action="/register">
+<tr><td>Username:</td><td><input type="text" name="username" size="20px" required /></td></tr>
+<tr><td>Password:</td><td><input type="password" name="password" size="20px" required /></td></tr>
+<tr><td>Confirm Password:</td><td><input type="password" name="cpassword" size="20px" /></td></tr>
+<tr><td colspan="2"><input type="submit" name="register" value="Register" /></td></tr>
+</form>
+</table><br /><br />
+Already have an account? <a href="login.html">Login here.</a>
+</div>
+</div>
+</body>
+</html>

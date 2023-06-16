@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block y %}
+{% if 'username' is in session %}
+<strong><h1>Welcome to the Pizza Palace!</h1></strong><br />
+<h3>We have a wide variety of Pizzas available for you to try!
+</h3><br /><br  />
+<h4>You are currently logged in. You can view the <a href="/pizzas">Pizza List</a> to select what pizza to buy.</h4>
+{% else %}
+<img src="https://media.istockphoto.com/id/938742222/photo/cheesy-pepperoni-pizza.jpg?s=170667a&w=0&k=20&c=iNZpvQkg4H-Xe77n8ZP782eOIgvoM71EqS7n6Ra3NyE=" width="300px" height="200px" />
+<strong><h1>Welcome to the Pizza Palace!</h1></strong><br />
+<h3>We have a wide variety of Pizzas available for you to try!
+</h3><br /><br  />
+<h4>We use special algorithms on this website to cater to your needs by offering Pizzas that particularly suit your tastes. Once you enter into the website, our special algorithms will select the Pizzas that you are most likely to buy.<br />
+</h4>
+<img src="https://littlesunnykitchen.com/wp-content/uploads/2022/03/Pepperoni-Pizza-1-730x1095.jpg" height="500px" width="300px" /> <br/><br/><h4>You can <a href="/login" style="color:#FF6633">Login</a> or <a href="/register" style="color:#FF6633">Register</a> to continue!</h4>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pizza Palace</title>
+<link rel="stylesheet" href="/home/aditya0x00/pizza/templates/main.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="nav">
+<a href="/"><div id="logo"></div></a>
+{% if 'username' is in session %}
+<a href="/logout"><div class="nav-item" style="margin-left:100px;">Logout</div></a>
+{% else %}
+<a href="/login"><div class="nav-item" style="margin-left:100px;">Login</div></a>
+<a href="/register"><div class="nav-item">Registration</div></a>
+{% endif %}
+<a href="/pizzas"><div class="nav-item">Pizza List</div></a>
+</div>
+<div id="content">
+<div id="main_body">
+    {% block y %}{% endblock %}
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block y %}
+{% if error %}
+<p style="background:#FF4646;border-radius:10px;padding-top:5px;padding-bottom:5px;">{{ error }}</p>
+{% endif %}
+<table align="center">
+<form method="POST" action="/register">
+<tr><td>Username:</td><td><input type="text" name="username" size="20px" required /></td></tr>
+<tr><td>Password:</td><td><input type="password" name="password" size="20px" required /></td></tr>
+<tr><td>Confirm Password:</td><td><input type="password" name="cpassword" size="20px" /></td></tr>
+<tr><td colspan="2"><input type="submit" name="register" value="Register" /></td></tr>
+</form>
+</table><br /><br />
+Already have an account? <a href="/login">Login here.</a>
+{% endblock %}

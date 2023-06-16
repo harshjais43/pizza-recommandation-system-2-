@@ -1,0 +1,75 @@
+* { font-family:'Manrope', sans-serif; text-align:center; }
+body { background: #CCCCCC; margin:0 auto; }
+table, table tr, table td {
+border:0px;
+border-collapse:collapse;
+}
+input[type=submit] {
+border: 1px solid #000;
+background:#FF9900;
+}
+a {
+text-decoration:none;
+color: #000;
+}
+a:hover {
+text-decoration:none;
+color:#000;
+}
+.nav-item:hover {
+background:#B5B5B5;
+}
+#nav {
+background:#D1D1C9;
+border-radius:0px 0px 20px 10px;
+box-shadow:0px 2px 5px #000;
+float:left;
+width:100%;
+height:auto;
+padding-bottom:10px;
+padding-left:20px;
+}
+#logo {
+background:url('logo.png');
+width:319px;
+height:90px;
+float:left;
+}
+.nav-item {
+float:left;
+width:200px;
+height:40px;
+background:#999999;
+margin-left:100px;
+border-radius:20px;
+margin-top:20px;
+}
+#content {
+top:100px;
+float:left;
+margin-top:20px;
+width:100%;
+}
+#main_body {
+background:#fff;
+border-radius:15px;
+padding:50px;
+text-align:center;
+overflow:hidden;
+}
+.pizza-item {
+background:#ADADAD;
+width:250px;
+height:0 auto;
+padding:10px;
+border-radius:10px;
+float:left;
+margin-left:30px;
+margin-top:10px;
+}
+.buy {
+background:#E14511;
+border-radius:30px;
+padding-top:5px;
+padding-bottom:5px;
+}
